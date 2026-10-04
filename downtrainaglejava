@@ -1,0 +1,25 @@
+package Maaz;
+import java.util.Scanner;
+class DownTriangle {
+	public static void(String args[])
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.print("Enternnumber o f rows:");
+		int n=sc.nextInt();
+		for(int i=n;i<=1;i--)
+		{
+			//Print Spaces
+			for(int j=1;j<=n-i;j++)
+			{
+				System.out.print(" ");
+			}
+			//Print Stars
+			for(int j=1;j<=2*i-1;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		sc.close();
+	 }
+}
