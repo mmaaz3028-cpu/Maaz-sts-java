@@ -1,4 +1,4 @@
-package sayed.java;
+package Maaz;
 
 import java.util.Scanner;
 
