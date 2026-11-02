@@ -1,0 +1,34 @@
+package prgedu;
+public class BankAcc {
+		String accountNumber;
+		String HolderName;
+		double balance;
+		
+		BankAcc(String accno, String name,double bal){
+			accountNumber=accno;
+			HolderName=name;
+			balance=bal;
+		}
+	    void deposit(double amount){
+	    	balance= balance + amount;
+	    	}
+	    void withdraw(double amount) {
+	    	balance = balance - amount;
+	    }
+	    void displayBalance() {
+	    	System.out.println(HolderName +":"+balance);
+	    }
+        
+		    public static void main(String[]args){
+		    	BankAcc acc1=new BankAcc("101","Rahul",5000);
+			    BankAcc acc2=new BankAcc("102","Priya",8500);
+			    BankAcc acc3=new BankAcc("103","Amit",12000);
+			    acc1.deposit(2000);
+			    acc2.withdraw(1000);
+			    acc3.deposit(3000);
+			    acc1.displayBalance();
+			    acc2.displayBalance();
+			    acc3.displayBalance();
+		    }
+		}
+	
